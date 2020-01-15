@@ -26,74 +26,21 @@
                 <li class="list-catalog">Categoría</li>
             </ul>
         </div>
-        <div class="container-fluid">
-            <div class="media media-hover">
-                <div class="media-left media-middle">
-                    <a href="#!" class="tooltips-general" data-toggle="tooltip" data-placement="right" title="Más información del libro">
-                      <img class="media-object" src="../assets/img/book.png" alt="Libro" width="48" height="48"/>
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">1 - Título</h4>
-                    <div class="pull-left">
-                        <strong>Autor<br/></strong>
-                        <strong>Año<br/><//strong>
-                    </div>
-                    <p class="text-center pull-right">
-                        <a href="#!" class="btn btn-info btn-xs" style="margin-right: 10px;"><i class="zmdi zmdi-info-outline"></i> &nbsp;&nbsp; Más información</a>
-                    </p>
-                </div>
-            </div>
-            <div class="media media-hover">
-                <div class="media-left media-middle">
-                    <a href="#!" class="tooltips-general" data-toggle="tooltip" data-placement="right" title="Más información del libro">
-                      <img class="media-object" src="../assets/img/book.png" alt="Libro" width="48" height="48"/>
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">2 - Título</h4>
-                    <div class="pull-left">
-                        <strong>Autor<br/></strong>
-                        <strong>Año<br/></strong>
-                    </div>
-                    <p class="text-center pull-right">
-                        <a href="#!" class="btn btn-info btn-xs" style="margin-right: 10px;"><i class="zmdi zmdi-info-outline"></i> &nbsp;&nbsp; Más información</a>
-                    </p>
-                </div>
-            </div>
-            <div class="media media-hover">
-                <div class="media-left media-middle">
-                    <a href="#!" class="tooltips-general" data-toggle="tooltip" data-placement="right" title="Más información del libro">
-                      <img class="media-object" src="../assets/img/book.png" alt="Libro" width="48" height="48"/>
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">3 - Título</h4>
-                    <div class="pull-left">
-                        <strong>Autor<br/></strong>
-                        <strong>Año<br/></strong>
-                    </div>
-                    <p class="text-center pull-right">
-                        <a href="#!" class="btn btn-info btn-xs" style="margin-right: 10px;"><i class="zmdi zmdi-info-outline"></i> &nbsp;&nbsp; Más información</a>
-                    </p>
-                </div>
-            </div>
-            <div class="media media-hover">
-                <div class="media-left media-middle">
-                    <a href="#!" class="tooltips-general" data-toggle="tooltip" data-placement="right" title="Más información del libro">
-                      <img class="media-object" src="../assets/img/book.png" alt="Libro" width="48" height="48"/>
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">4 - Título</h4>
-                    <div class="pull-left">
-                        <strong>Autor<br/></strong>
-                        <strong>Año<br/></strong>
-                    </div>
-                    <p class="text-center pull-right">
-                        <a href="#!" class="btn btn-info btn-xs" style="margin-right: 10px;"><i class="zmdi zmdi-info-outline"></i> &nbsp;&nbsp; Más información</a>
-                    </p>
-                </div>
-            </div>
+        <div id="content" class="container-fluid">
         </div>     
+    <script src="../js/addBook.js"></script>
+
+    <script type="text/javascript" runat="server">
+        public static void Añadir() {
+                 
+        }
+    </script>
+    <style>
+        #aaa{
+            margin-left:50px;
+        }
+        #iii {
+            margin-left:10px;
+        }
+    </style>
 </asp:Content>

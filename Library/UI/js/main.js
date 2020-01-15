@@ -21,7 +21,7 @@ $(document).ready(function(){
             type: "warning",
             showCancelButton: true,
             confirmButtonColor: "#5cb85c",
-            confirmButtonText: "Si, salir",
+            confirmButtonText:"Si, salir",
             cancelButtonText: "No, cancelar",
             animation: "slide-from-top",
             closeOnConfirm: false 
@@ -29,6 +29,7 @@ $(document).ready(function(){
             window.location=LinkExitSystem; 
         });  
     });
+
     $('.search-book-button').click(function(e){
         e.preventDefault();
         var LinkSearchBook=$(this).attr("data-href");
@@ -53,6 +54,7 @@ $(document).ready(function(){
             window.location=LinkSearchBook+"?bookName="+inputValue;
        });
     });
+
     $('.btn-help').on('click', function(){
         $('#ModalHelp').modal({
             show: true,

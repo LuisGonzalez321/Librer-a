@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>http://localhost:8080/</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Library.dll">
+      <publishTime>03/16/2019 22:53:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>03/16/2019 22:31:01</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/16/2019 22:47:21</publishTime>
+    </File>
+    <File Include="UI/assets/icons/book.ico">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/icons/mCSB_buttons.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/icons/SelectMaterialIndicator-white.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/icons/SelectMaterialIndicator.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/book.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/calendar.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/calendar_book.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/category.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/chart.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/checklist.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/clock.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/flat-book.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/font-login.jpg">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/institution.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/logo.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/pdf.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/section.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/user-sesion.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/user.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/user01.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/user02.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/user03.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/user04.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/assets/img/user05.png">
+      <publishTime>02/27/2019 22:09:17</publishTime>
+    </File>
+    <File Include="UI/css/bootstrap.min.css">
+      <publishTime>02/27/2019 21:51:18</publishTime>
+    </File>
+    <File Include="UI/css/jquery.mCustomScrollbar.css">
+      <publishTime>02/27/2019 21:51:18</publishTime>
+    </File>
+    <File Include="UI/css/login.css">
+      <publishTime>02/27/2019 21:51:18</publishTime>
+    </File>
+    <File Include="UI/css/material-design-iconic-font.min.css">
+      <publishTime>02/27/2019 21:51:18</publishTime>
+    </File>
+    <File Include="UI/css/normalize.css">
+      <publishTime>02/27/2019 21:51:18</publishTime>
+    </File>
+    <File Include="UI/css/style.css">
+      <publishTime>02/27/2019 21:51:18</publishTime>
+    </File>
+    <File Include="UI/css/sweet-alert.css">
+      <publishTime>02/27/2019 21:51:18</publishTime>
+    </File>
+    <File Include="UI/css/timeline.css">
+      <publishTime>02/27/2019 21:51:18</publishTime>
+    </File>
+    <File Include="UI/fonts/AlegreyaSansSC-Regular.eot">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/AlegreyaSansSC-Regular.svg">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/AlegreyaSansSC-Regular.ttf">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/AlegreyaSansSC-Regular.woff">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/AlegreyaSansSC-Regular.woff2">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/Material-Design-Iconic-Font.eot">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/Material-Design-Iconic-Font.svg">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/Material-Design-Iconic-Font.ttf">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/Material-Design-Iconic-Font.woff">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/Material-Design-Iconic-Font.woff2">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/OpenSans-CondLight.eot">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/OpenSans-CondLight.svg">
+      <publishTime>02/27/2019 22:08:52</publishTime>
+    </File>
+    <File Include="UI/fonts/OpenSans-CondLight.ttf">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/OpenSans-CondLight.woff">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/fonts/OpenSans-CondLight.woff2">
+      <publishTime>02/27/2019 22:08:51</publishTime>
+    </File>
+    <File Include="UI/js/bootstrap.min.js">
+      <publishTime>02/27/2019 22:08:31</publishTime>
+    </File>
+    <File Include="UI/js/jquery-1.11.2.min.js">
+      <publishTime>02/27/2019 22:08:31</publishTime>
+    </File>
+    <File Include="UI/js/jquery.mCustomScrollbar.concat.min.js">
+      <publishTime>02/27/2019 22:08:31</publishTime>
+    </File>
+    <File Include="UI/js/main.js">
+      <publishTime>02/27/2019 22:08:31</publishTime>
+    </File>
+    <File Include="UI/js/modernizr.js">
+      <publishTime>02/27/2019 22:08:31</publishTime>
+    </File>
+    <File Include="UI/js/sweet-alert.min.js">
+      <publishTime>02/27/2019 22:08:31</publishTime>
+    </File>
+    <File Include="UI/Pages/Admin.aspx">
+      <publishTime>03/05/2019 22:22:27</publishTime>
+    </File>
+    <File Include="UI/Pages/advancesettings.aspx">
+      <publishTime>03/05/2019 22:29:58</publishTime>
+    </File>
+    <File Include="UI/Pages/book.aspx">
+      <publishTime>03/02/2019 20:43:10</publishTime>
+    </File>
+    <File Include="UI/Pages/catalog.aspx">
+      <publishTime>03/02/2019 21:38:37</publishTime>
+    </File>
+    <File Include="UI/Pages/category.aspx">
+      <publishTime>03/02/2019 21:38:06</publishTime>
+    </File>
+    <File Include="UI/Pages/Home.aspx">
+      <publishTime>03/01/2019 10:17:08</publishTime>
+    </File>
+    <File Include="UI/Pages/institution.aspx">
+      <publishTime>03/02/2019 22:11:04</publishTime>
+    </File>
+    <File Include="UI/Pages/listadmin.aspx">
+      <publishTime>03/02/2019 22:36:51</publishTime>
+    </File>
+    <File Include="UI/Pages/listcategory.aspx">
+      <publishTime>03/02/2019 22:48:21</publishTime>
+    </File>
+    <File Include="UI/Pages/listpersonal.aspx">
+      <publishTime>03/02/2019 22:59:54</publishTime>
+    </File>
+    <File Include="UI/Pages/listprovider.aspx">
+      <publishTime>03/05/2019 17:02:11</publishTime>
+    </File>
+    <File Include="UI/Pages/listsection.aspx">
+      <publishTime>03/05/2019 17:06:24</publishTime>
+    </File>
+    <File Include="UI/Pages/liststudent.aspx">
+      <publishTime>03/05/2019 17:32:38</publishTime>
+    </File>
+    <File Include="UI/Pages/listteacher.aspx">
+      <publishTime>03/05/2019 17:42:07</publishTime>
+    </File>
+    <File Include="UI/Pages/loan.aspx">
+      <publishTime>03/05/2019 18:14:41</publishTime>
+    </File>
+    <File Include="UI/Pages/loanpending.aspx">
+      <publishTime>03/05/2019 22:22:12</publishTime>
+    </File>
+    <File Include="UI/Pages/loanreservation.aspx">
+      <publishTime>03/05/2019 18:32:22</publishTime>
+    </File>
+    <File Include="UI/Pages/personal.aspx">
+      <publishTime>03/05/2019 18:38:01</publishTime>
+    </File>
+    <File Include="UI/Pages/provider.aspx">
+      <publishTime>03/05/2019 18:44:04</publishTime>
+    </File>
+    <File Include="UI/Pages/report.aspx">
+      <publishTime>03/05/2019 18:53:20</publishTime>
+    </File>
+    <File Include="UI/Pages/searchbook.aspx">
+      <publishTime>03/05/2019 18:49:03</publishTime>
+    </File>
+    <File Include="UI/Pages/section.aspx">
+      <publishTime>03/05/2019 20:09:40</publishTime>
+    </File>
+    <File Include="UI/Pages/Site1.Master">
+      <publishTime>03/16/2019 22:43:13</publishTime>
+    </File>
+    <File Include="UI/Pages/student.aspx">
+      <publishTime>03/05/2019 20:39:33</publishTime>
+    </File>
+    <File Include="UI/Pages/teacher.aspx">
+      <publishTime>03/05/2019 20:50:37</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/16/2019 22:53:55</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

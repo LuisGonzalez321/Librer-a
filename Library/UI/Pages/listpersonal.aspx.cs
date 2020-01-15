@@ -11,7 +11,8 @@ namespace Library.UI.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            tabla_personal.DataSource=Controller.CPersonalAdmin.Mostrar();
+            tabla_personal.DataBind();
         }
     }
 }

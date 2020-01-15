@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/Pages/Site1.Master" AutoEventWireup="true" CodeBehind="listpersonal.aspx.cs" Inherits="Library.UI.Pages.listpersonal" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -38,19 +39,35 @@
             </div>
         </div>
         <div class="container-fluid">
-            <form runat="server" class="pull-right" style="width: 30% !important;" autocomplete="off">
-                <div class="group-material">
+     
+            <form runat="server" class="pull-left " style="width:100%;" autocomplete="off">
+                <div class="group-material" style="width:30% !important;float:right;">
                     <asp:TextBox runat="server" ID="txt_buscarP" type="search" style="display: inline-block !important; width: 70%;" class="material-control tooltips-general" placeholder="Buscar personal" required="" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]{1,50}" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe los nombres, sin los apellidos"></asp:TextBox>
                     <button id="btn_buscar" runat="server" class="btn" style="margin: 0; height: 43px; background-color: transparent !important;">
                         <i class="zmdi zmdi-search" style="font-size: 25px;"></i>
                     </button>
                 </div>
             <h2 class="text-center all-tittles" style="clear: both; margin: 25px 0;">listado de personal administrativo</h2>
-            <div class="table-responsive">       
-                    <asp:GridView ID="GridView1" runat="server">
-                    </asp:GridView>
+            <div class="row">
+                  <div class="col-12">     
+                   <asp:GridView ID="tabla_personal" CssClass="table table-hover table-sm table-responsive" runat="server" GridLines="None" PageSize="8">
+                        <Columns>
+                            <asp:ButtonField  HeaderText="Editar">
+                            <ControlStyle CssClass="zmdi zmdi-refresh" ForeColor="White" />
+                            <ItemStyle BackColor="#5CB85C" CssClass="suss" Width="9%" />
+                            </asp:ButtonField>
+                            <asp:ButtonField HeaderText="Eliminar">
+                            <ControlStyle CssClass="zmdi zmdi-delete " ForeColor="White" />
+                            <ItemStyle BackColor="#D9534F" CssClass="dang" Width="9%" />
+                            </asp:ButtonField>
+                        </Columns>
+                           
+                        <HeaderStyle BackColor="#DFF0D8" Font-Bold="True" Font-Size="15px" />
+                   </asp:GridView> 
             </div>
-        </form>
+             </div>
+           </form> 
+        </div>   
         <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -66,7 +83,6 @@
                 </div>
             </div>
           </div>
-        </div>
-
-     </div>
+        </div>    
+               
 </asp:Content>

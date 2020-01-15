@@ -19,7 +19,7 @@
         <div class="container-fluid"  style="margin: 50px 0;">
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3">
-                    <img src="assets/img/user04.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
+                    <img src="../assets/img/user04.png" alt="user" class="img-responsive center-box" style="max-width: 110px;"/>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
                     Bienvenido a la sección donde se encuentra el listado de proveedores de libros. Puedes actualizar o eliminar los datos del proveedor, si hay libros asociados al proveedor no podrás eliminarlo.
@@ -30,83 +30,42 @@
             <div class="row">
                 <div class="col-xs-12 lead">
                     <ol class="breadcrumb">
-                      <li><a href="provider.html">Nuevo proveedor</a></li>
+                      <li><a href="provider.aspx">Nuevo proveedor</a></li>
                       <li class="active">Listado de proveedores</li>
                     </ol>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <h2 class="text-center all-tittles">listado de proveedores</h2>
-            <div class="div-table">
-                <div class="div-table-row div-table-head">
-                    <div class="div-table-cell">#</div>
-                    <div class="div-table-cell">Nombre</div>
-                    <div class="div-table-cell">Email</div>
-                    <div class="div-table-cell">Dirección</div>
-                    <div class="div-table-cell">Teléfono</div>
-                    <div class="div-table-cell">Responsable</div>
-                    <div class="div-table-cell">Actualizar</div>
-                    <div class="div-table-cell">Eliminar</div>
+         <div class="container-fluid">
+     
+            <form runat="server" class="pull-left " style="width:100%;" autocomplete="off">
+                <div class="group-material" style="width:30% !important;float:right;">
+                    <asp:TextBox runat="server" ID="txt_buscarP" type="search" style="display: inline-block !important; width: 70%;" class="material-control tooltips-general" placeholder="Buscar Proveedor" required="" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]{1,50}" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe los nombres, sin los apellidos"></asp:TextBox>
+                    <button id="btn_buscar" runat="server" class="btn" style="margin: 0; height: 43px; background-color: transparent !important;">
+                        <i class="zmdi zmdi-search" style="font-size: 25px;"></i>
+                    </button>
                 </div>
-                <div class="div-table-row">
-                    <div class="div-table-cell">#</div>
-                    <div class="div-table-cell">Nombre</div>
-                    <div class="div-table-cell">Email</div>
-                    <div class="div-table-cell">Dirección</div>
-                    <div class="div-table-cell">Teléfono</div>
-                    <div class="div-table-cell">Responsable</div>
-                    <div class="div-table-cell">
-                        <button class="btn btn-success"><i class="zmdi zmdi-refresh"></i></button>
-                    </div>
-                    <div class="div-table-cell">
-                        <button class="btn btn-danger"><i class="zmdi zmdi-delete"></i></button>
-                    </div>
-                </div>
-                <div class="div-table-row">
-                    <div class="div-table-cell">#</div>
-                    <div class="div-table-cell">Nombre</div>
-                    <div class="div-table-cell">Email</div>
-                    <div class="div-table-cell">Dirección</div>
-                    <div class="div-table-cell">Teléfono</div>
-                    <div class="div-table-cell">Responsable</div>
-                    <div class="div-table-cell">
-                        <button class="btn btn-success"><i class="zmdi zmdi-refresh"></i></button>
-                    </div>
-                    <div class="div-table-cell">
-                        <button class="btn btn-danger"><i class="zmdi zmdi-delete"></i></button>
-                    </div>
-                </div>
-                <div class="div-table-row">
-                    <div class="div-table-cell">#</div>
-                    <div class="div-table-cell">Nombre</div>
-                    <div class="div-table-cell">Email</div>
-                    <div class="div-table-cell">Dirección</div>
-                    <div class="div-table-cell">Teléfono</div>
-                    <div class="div-table-cell">Responsable</div>
-                    <div class="div-table-cell">
-                        <button class="btn btn-success"><i class="zmdi zmdi-refresh"></i></button>
-                    </div>
-                    <div class="div-table-cell">
-                        <button class="btn btn-danger"><i class="zmdi zmdi-delete"></i></button>
-                    </div>
-                </div>
-                <div class="div-table-row">
-                    <div class="div-table-cell">#</div>
-                    <div class="div-table-cell">Nombre</div>
-                    <div class="div-table-cell">Email</div>
-                    <div class="div-table-cell">Dirección</div>
-                    <div class="div-table-cell">Teléfono</div>
-                    <div class="div-table-cell">Responsable</div>
-                    <div class="div-table-cell">
-                        <button class="btn btn-success"><i class="zmdi zmdi-refresh"></i></button>
-                    </div>
-                    <div class="div-table-cell">
-                        <button class="btn btn-danger"><i class="zmdi zmdi-delete"></i></button>
-                    </div>
-                </div>
+            <h2 class="text-center all-tittles" style="clear: both; margin: 25px 0;">listado de personal administrativo</h2>
+            <div class="row">
+                  <div class="col-12">     
+                   <asp:GridView ID="tabla_proveedor" CssClass="table table-hover table-sm table-responsive" runat="server" GridLines="None" PageSize="8">
+                        <Columns>
+                            <asp:ButtonField  HeaderText="Editar">
+                            <ControlStyle CssClass="zmdi zmdi-refresh" ForeColor="White" />
+                            <ItemStyle BackColor="#5CB85C" CssClass="suss" Width="9%" />
+                            </asp:ButtonField>
+                            <asp:ButtonField HeaderText="Eliminar">
+                            <ControlStyle CssClass="zmdi zmdi-delete " ForeColor="White" />
+                            <ItemStyle BackColor="#D9534F" CssClass="dang" Width="9%" />
+                            </asp:ButtonField>
+                        </Columns>
+                           
+                        <HeaderStyle BackColor="#DFF0D8" Font-Bold="True" Font-Size="15px" />
+                   </asp:GridView> 
             </div>
-        </div>
+             </div>
+           </form> 
+        </div> 
         <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">

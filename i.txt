@@ -1,0 +1,24 @@
+
+function ConfirmDelete()
+{
+   if(confirm("Esta seguro de eliminar este registro"))
+   {
+     document.getElementById("Contenido_texto").value="yes";
+   }else{
+     document.getElementById("Contenido_texto").value="";
+   }
+}
+
+function PrintThisDiv(id){
+    var HTMLContent=document.getElementById(id);
+    var popup=window.open('about:blank',id,'width=500,height=500');
+  
+    popup.document.writeln('<html>');
+
+    popup.document.writeln('<a href="javascript:;" onclick="window.print();">Imprimir</a>');'
+    popup.document.writeln(HTMLContent.innerHTML);
+    popup.document.writeln('</body></html>')
+}
+
+
+https://www.xvideos.com/video44596871/rubia_tetona_perfecta_con_ojos_azules_loco_orgasmo

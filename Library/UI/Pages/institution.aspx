@@ -1,5 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/Pages/Site1.Master" AutoEventWireup="true" CodeBehind="institution.aspx.cs" Inherits="Library.UI.Pages.institution" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+  <script type="text/javascript">
+      function MostrarMensaje(estado){
+          if (estado == 1){alert("Institución añadida con exito");}  
+          else{alert("Error al ingresar!!");}
+      }
+  </script>
+   
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
@@ -65,7 +74,7 @@
                             </div>
                             <p class="text-center">
                                 <asp:Button runat="server" ID="btn_limpar" Text="Limpiar" type="reset" CssClass="btn btn-info" style="margin-right: 20px;"/><i class="zmdi zmdi-roller"></i> &nbsp;&nbsp;
-                                <asp:Button runat="server" ID="btn_guardar" Text="Guardar" type="submit" CssClass="btn btn-primary"/><i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp;
+                                <asp:Button runat="server" ID="btn_guardar" Text="Guardar" type="submit" CssClass="btn btn-primary" OnClick="btn_guardar_Click"/><i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp;
                             </p> 
                        </div>
                    </div>

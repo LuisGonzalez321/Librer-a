@@ -35,25 +35,25 @@
                                
                             </div>
                             <div class="group-material">
-                                <asp:Textbox runat="server" ID="txt_" type="text" class="tooltips-general material-control" placeholder="Escribe aquí el código correlativo del libro" pattern="[0-9]{1,20}" required="" maxlength="20" data-toggle="tooltip" data-placement="top" title="Escribe el código correlativo del libro, solamente números"></asp:Textbox>
+                                <asp:Textbox runat="server" ID="txt_codigo"  class="tooltips-general material-control" placeholder="Escribe aquí el código correlativo del libro" pattern="[0-9]{1,20}" required="" maxlength="20" data-toggle="tooltip" data-placement="top" title="Escribe el código correlativo del libro, solamente números"></asp:Textbox>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Código correlativo</label>
                             </div>
                             <div class="group-material">
-                                <asp:Textbox runat="server" type="text" class="tooltips-general material-control" placeholder="Escribe aquí el título o nombre del libro" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe el título o nombre del libro"></asp:Textbox>
+                                <asp:Textbox runat="server" type="text" class="tooltips-general material-control" placeholder="Escribe aquí el título o nombre del libro" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe el título o nombre del libro" ID="txt_titulo"></asp:Textbox>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Título</label>
                             </div>
                             <div class="group-material">
-                                <asp:Textbox runat="server" type="text" class="tooltips-general material-control" placeholder="Escribe aquí el autor del libro" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe el nombre del autor del libro"></asp:Textbox>
+                                <asp:Textbox runat="server" type="text" class="tooltips-general material-control" placeholder="Escribe aquí el autor del libro" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Escribe el nombre del autor del libro" ID="txt_autor"></asp:Textbox>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Autor</label>
                             </div>
                             <div class="group-material">
-                                <asp:Textbox runat="server" type="text" class="tooltips-general material-control" placeholder="Escribe aquí el país del libro" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe el país del libro"></asp:Textbox>
+                                <asp:Textbox runat="server" type="text" class="tooltips-general material-control" placeholder="Escribe aquí el país del libro" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe el país del libro" ID="txt_pais"></asp:Textbox>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>País</label>
@@ -66,32 +66,32 @@
                                 </asp:DropDownList>
                             </div>
                            <div class="group-material">
-                                <asp:Textbox runat="server" type="text" class="material-control tooltips-general" placeholder="Escribe aquí el año del libro" required="" pattern="[0-9]{1,4}" maxlength="4" data-toggle="tooltip" data-placement="top" title="Solamente números, sin espacios"></asp:Textbox>
+                                <asp:Textbox runat="server" type="text" class="material-control tooltips-general" placeholder="Escribe aquí el año del libro" required="" pattern="[0-9]{1,4}" maxlength="4" data-toggle="tooltip" data-placement="top" title="Solamente números, sin espacios" ID="txt_año"></asp:Textbox>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Año</label>
                            </div>
                             <div class="group-material">
-                                <asp:Textbox runat="server" type="text" class="material-control tooltips-general" placeholder="Escribe aquí la editorial del libro" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Editorial del libro"></asp:Textbox>
+                                <asp:Textbox runat="server" type="text" class="material-control tooltips-general" placeholder="Escribe aquí la editorial del libro" required="" maxlength="70" data-toggle="tooltip" data-placement="top" title="Editorial del libro" ID="txt_editorial"></asp:Textbox>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Editorial</label>
                             </div>
                             <div class="group-material">
-                                <asp:Textbox runat="server" type="text" class="material-control tooltips-general" placeholder="Escribe aquí la edición del libro" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Edición del libro"></asp:Textbox>
+                                <asp:Textbox runat="server" type="text" class="material-control tooltips-general" placeholder="Escribe aquí la edición del libro" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="Edición del libro" ID="txt_edición"></asp:Textbox>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Edición</label>
                             </div>
                             <div class="group-material">
-                                <asp:Textbox runat="server" type="text" CssClass="material-control tooltips-general"  placeholder="Escribe aquí la cantidad de libros que registraras" pattern="[0-9]{1,7}" maxlength="7" title="¿Cuántos libros registraras?"></asp:Textbox>
+                                <asp:Textbox runat="server" type="text" CssClass="material-control tooltips-general"  placeholder="Escribe aquí la cantidad de libros que registraras" pattern="[0-9]{1,7}" maxlength="7" title="¿Cuántos libros registraras?" ID="txt_ejemplares"></asp:Textbox>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Ejemplares</label>
                             </div>
                             <legend><strong>Estado físico, ubicación y valor</strong></legend><br/>
                             <div class="group-material">
-                                <asp:Textbox runat="server" type="text" CssClass="material-control tooltips-general" placeholder="Escribe aquí la ubicación del libro" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="¿Dónde se ubicara el libro?"></asp:Textbox>
+                                <asp:Textbox runat="server" type="text" CssClass="material-control tooltips-general" placeholder="Escribe aquí la ubicación del libro" required="" maxlength="50" data-toggle="tooltip" data-placement="top" title="¿Dónde se ubicara el libro?" ID="txt_ubicación"></asp:Textbox>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Ubicación</label>
@@ -124,7 +124,7 @@
                             </div>
                             <p class="text-center">
                                 <asp:Button runat="server" type="reset" Text="Limpiar"  CssClass="btn btn-info" style="margin-right: 20px;"/><i class="zmdi zmdi-roller"></i> &nbsp;&nbsp;
-                                <asp:Button runat="server" type="submit" Text="Guardar" CssClass="btn btn-primary"/><i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp;
+                                <asp:Button runat="server" ID="btn_insertarLibro" type="submit" Text="Guardar" CssClass="btn btn-primary" OnClick="btn_insertarLibro_Click"/><i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp;
                             </p>
                        </div>
                    </div>
